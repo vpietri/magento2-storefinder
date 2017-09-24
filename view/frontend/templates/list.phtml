@@ -1,0 +1,32 @@
+<?php
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php $_shops = $block->getShops(); ?>
+<?php if ($_shops && count($_shops)): ?>
+    <div class="storefinder-shop-locator" data-mage-init='{"storeFinder":{"places":<?php echo $block->getJsonShops(); ?>}}'>
+      <div id="adm-shop-navigation" class="storefinder-navigation">
+        <?php foreach ($_shops as $shop): ?>
+        <div class="storefinder-shop-item">
+            <div id="adm-shop-<?php echo $shop->getCode();?>" class="storefinder-shop-item-info">
+                <div class="col name"><?php echo $shop->getName(); ?></div>
+                <div class="col detail"><?php echo $shop->getDetail(); ?></div>
+                <div class="col telephone"><?php echo $shop->getTelephone(); ?></div>
+                <div class="col street"><?php echo $shop->getStreet(); ?></div>
+                <div class="col postcode"><?php echo $shop->getPostcode(); ?>, <?php echo $shop->getCity(); ?></div>
+                <div class="col country-id"><?php echo $shop->getCountryId(); ?></div>
+            </div>
+            <span class="links">
+                <a class="localize" data-code="<?php echo $shop->getCode(); ?>"><?php echo __('Localize'); ?></a>
+                <a class="view" href="<?php echo $block->getViewUrl($shop); ?>"><?php echo __('View'); ?></a>
+            </span>
+        </div>
+        <?php endforeach; ?>
+      </div>
+      <div id="adm-shop-map" class="storefinder-map">
+      </div>
+    </div>
+<?php else: ?>
+    <div class="message info empty"><span><?php echo __('No Shop found.'); ?></span></div>
+<?php endif ?>

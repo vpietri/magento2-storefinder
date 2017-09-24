@@ -1,0 +1,50 @@
+.storefinder-shop-locator {
+    height: auto !important;
+    min-height: 600px;
+    width: 100%;
+}
+
+.storefinder-navigation {
+    float: left;
+    height: 600px;
+    overflow: auto;
+    width: 35%;    
+}
+
+.storefinder-map {
+    border: 1px solid #ccc;
+    float: right;
+    height: auto !important;
+    min-height: 600px;
+    width: 64%;
+}
+
+.storefinder-shop-item {
+    border: 1px solid #ccc;
+    height: auto !important;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+.storefinder-shop-item:hover {
+    border: 1px solid black;
+}
+
+.storefinder-shop-item-selected {
+    border: 1px solid black;
+}
+
+.storefinder-shop-item .links{
+    cursor: pointer;
+    vertical-align: top;
+}
+.storefinder-shop-item .links a {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.storefinder-shop-item .links a.localize {
+    background: rgba(0, 0, 0, 0) url("../images/localize.png") no-repeat scroll 0 0;
+}
+.storefinder-shop-item .links a.view {
+    background: rgba(0, 0, 0, 0) url("../images/view.png") no-repeat scroll 0 0;
+}

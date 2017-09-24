@@ -1,0 +1,45 @@
+<?php
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+$shop = $block->getShop();
+?>
+<div class="shop-view">
+    <div class="detail">
+        <?php echo $shop->getDetail(); ?>
+    </div>
+    <div class="email">
+        <?php echo $shop->getEmail(); ?>
+    </div>
+    <address>
+        <div class="telephone">
+            <?php echo $shop->getTelephone(); ?>
+        </div>
+        <div class="fax">
+            <?php echo $shop->getFax(); ?>
+        </div>
+        <div class="street">
+            <?php echo $shop->getStreet(); ?>
+        </div>
+        <div class="postcode">
+            <?php echo $shop->getPostcode(); ?>
+        </div>
+        <div class="city">
+            <?php echo $shop->getCity(); ?>
+        </div>
+        <div class="region">
+            <?php echo $shop->getRegion(); ?>
+        </div>
+        <div class="country-id">
+            <?php echo $shop->getCountryId(); ?>
+        </div>
+    </address>
+    <div class="latitude">
+        <?php echo $shop->getLatitude(); ?>
+    </div>
+    <div class="longitude">
+        <?php echo $shop->getLongitude(); ?>
+    </div>
+</div>

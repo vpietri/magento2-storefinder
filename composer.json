@@ -1,0 +1,22 @@
+{
+    "name": "johndoe/ADM-StoreFinder",
+    "description": "Module generated whith vpietri/adm-devbuilder",
+    "type": "magento2-module",
+    "version": "0.1.0",
+    "minimum-stability": "beta",
+    "authors": [
+        {
+            "name": "John Doe",
+            "homepage": "http://www.john-doe.com/",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "ADM\\StoreFinder\\": ""
+        }
+    }
+}

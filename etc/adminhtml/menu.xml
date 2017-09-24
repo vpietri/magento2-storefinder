@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="ADM_StoreFinder::storefinder_content" title="ADM StoreFinder" module="ADM_StoreFinder" sortOrder="50" parent="Magento_Backend::content" resource="ADM_StoreFinder::storefinder_content" />
+        <add id="ADM_StoreFinder::shop" title="Shop" module="ADM_StoreFinder" sortOrder="0" parent="ADM_StoreFinder::storefinder_content" action="storefinder/shop" resource="ADM_StoreFinder::shop"/>
+    </menu>
+</config>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::content">
+                    <resource id="ADM_StoreFinder::storefinder_content" title="ADM StoreFinder" sortOrder="10" >
+                        <resource id="ADM_StoreFinder::shop" title="ADM StoreFinder Shops" sortOrder="40">
+                            <resource id="ADM_StoreFinder::save" title="Save ADM StoreFinder Shop" sortOrder="10" />
+                            <resource id="ADM_StoreFinder::shop_delete" title="Delete ADM StoreFinder Shop" sortOrder="20" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
